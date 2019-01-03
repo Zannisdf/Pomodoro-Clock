@@ -1,32 +1,57 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Share+Tech');
+
+body {
+  background-color: #6198b8;
+  font-family: 'Chakra Petch', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#page-title{
+  font-family: 'Share Tech', sans-serif;
+  font-size: 40px;
+  color: #dddddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#break-label,
+#break-length,
+#session-label,
+#session-length {
+  font-size: 16px;
+}
+
+.clock-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 15vh;
 }
 
-.App-link {
-  color: #61dafb;
+.display-container,
+.control-container {
+  margin: 0 10px 0 10px;
+  border: 1px solid #150578;
+  border-radius: 5px;
+  padding: 0 5px 10px 5px;
+  background-color: #449DD1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display-container{
+  box-shadow: 3px 3px 12px black;
+}
+
+.control-container{
+  box-shadow: 1px 1px 4px black;
+}
+
+button{
+  cursor: pointer;
+  background-color: #d17544;
+  border: none;
+  border-radius: 2px;
+  margin: 2px;
+  outline: none;
+}
+
+button:hover{
+  background-color: #d15244;
 }
